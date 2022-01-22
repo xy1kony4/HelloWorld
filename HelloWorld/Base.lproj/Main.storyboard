@@ -22,27 +22,30 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" title="show hello world" translatesAutoresizingMaskIntoConstraints="NO" id="kcs-un-gEw">
-                                <rect key="frame" x="182.5" y="432.5" width="51" height="31"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show hello world" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nez-1R-hMu">
-                                <rect key="frame" x="90" y="373" width="234" height="39"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ilV-Nx-6WR">
+                                <rect key="frame" x="96" y="787" width="223" height="51"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="makeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kmt-YE-GeJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <constraints>
-                            <constraint firstItem="kcs-un-gEw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3gv-zm-xXs"/>
+                            <constraint firstItem="ilV-Nx-6WR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="364.5" id="4Kc-3Q-227"/>
                             <constraint firstItem="syB-rd-1nJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D17-7q-el0"/>
-                            <constraint firstItem="nez-1R-hMu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLc-Io-5en"/>
-                            <constraint firstItem="kcs-un-gEw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nJp-WZ-DXp"/>
+                            <constraint firstItem="ilV-Nx-6WR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hXR-xC-nyq"/>
                             <constraint firstItem="syB-rd-1nJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-287.5" id="oaK-Ui-aWA"/>
-                            <constraint firstItem="nez-1R-hMu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-55.5" id="z1s-PE-TEl"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="syB-rd-1nJ" id="qu6-Ic-e78"/>
+                        <outlet property="toggleButton" destination="ilV-Nx-6WR" id="jtL-vL-89F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,6 +55,12 @@
     <resources>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
